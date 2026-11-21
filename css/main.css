@@ -24,25 +24,34 @@ body{
     background: rgb(37, 55, 77);
 }
 .celda{
-     /** vw para q se mantenga el tamano de la pantalla **/
-    width: 20vw; 
+    width: 20vw;
     height: 20vw;
     margin: 8px;
     border: 1px solid rgb(80, 148, 224);
     background: rgb(80, 148, 224);
     font-size: 5em;
     color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
 }
 .container-button{
     text-align: center;
 }
 .container-names{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: aliceblue;
 }
-h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: cadetblue;
+.container-names h3{
+    margin: 0.4rem 0;
 }
+
 button{
     height: 48px;
     padding: 0 24px;
